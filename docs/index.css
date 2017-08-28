@@ -1,6 +1,8 @@
 head, body {
     font-family: 'Soleil', 'Roboto', sans-serif;
-    color: #fff
+    color: #fff;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 
@@ -46,21 +48,23 @@ h1 {
 }
 
 
-.content {
+.content-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .25s ease-out;
+}
+.welcomer:not(.welcomer-hidden) ~ .content-wrapper {
+    height: calc(100vh - 50px);
 }
 
 .wrapper {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
 }
@@ -69,7 +73,7 @@ h1 {
 }
 
 a.slooob {
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     left: 30px;
 }

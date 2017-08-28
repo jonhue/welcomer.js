@@ -23,4 +23,4 @@ $('body').welcomer();
 * `data-welcomer-new_tab`: If `true`, opens call-to-action target location in a new tab. Accepts `true` or `false`. Defaults to `false`.
 * `data-welcomer-close`: Whether a close button is included. Accepts `true` or `false`. Defaults to `true`.
 * `data-welcomer-autoclose`: Miliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
-* `data-welcomer-turbolinks`: Whether turbolinks is in use or not. Accepts an `true` or `false`. Defaults to `false`.
+* `data-welcomer-delay`: Miliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.

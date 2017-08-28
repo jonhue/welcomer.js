@@ -1,1 +1,3 @@
-$('.content-wrapper').welcomer();
+$(function() {
+    $('body').welcomer();
+});
