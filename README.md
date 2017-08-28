@@ -5,12 +5,12 @@
 ## Usage
 
 ```javascript
-$('.content-wrapper').welcomer();
+$('body').welcomer();
 ```
 
 ```html
-<div class="content-wrapper" data-welcomer-content="We launched our new product!" data-welcomer-link="Start a trial" data-welcomer-href="https://example.com">
-</div>
+<body data-welcomer-content="We launched our new product!" data-welcomer-link="Start a trial" data-welcomer-href="https://example.com">
+</body>
 ```
 
 ### Options
