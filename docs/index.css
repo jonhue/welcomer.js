@@ -6,6 +6,11 @@ head, body {
 }
 
 
+.hidden {
+    display: none;
+}
+
+
 a {
     transition: all .15s ease-out;
     color: #fff;
