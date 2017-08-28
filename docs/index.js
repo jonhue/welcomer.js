@@ -1,4 +1,6 @@
 $(function() {
-    $('.content-wrapper').fadeIn();
+    setTimeout(function() {
+        $('.content-wrapper').fadeIn(500);
+    }, 1000);
     $('body').welcomer();
 });
