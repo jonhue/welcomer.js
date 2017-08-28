@@ -1,6 +1,6 @@
 $.fn.welcomer = function() {
     this.each(function() {
-        var content = $(this).data('welcomer-content') || 'Say hello to welcomer.js',
+        var content = $(this).data('welcomer-content') || 'Say hello to Welcomer.js',
             link = $(this).data('welcomer-link'),
             href = $(this).data('welcomer-href'),
             newTab = $(this).data('welcomer-new_tab') || false,

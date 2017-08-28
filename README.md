@@ -13,7 +13,7 @@ $(function() {
 ```
 
 ```html
-<body data-welcomer-content="Say hello to welcomer.js" data-welcomer-link="View on GitHub" data-welcomer-href="https://github.com/slooob/welcomer.js">
+<body data-welcomer-content="Say hello to Welcomer.js" data-welcomer-link="View on GitHub" data-welcomer-href="https://github.com/slooob/welcomer.js">
 </body>
 ```
 
