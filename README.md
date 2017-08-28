@@ -1,5 +1,7 @@
 # Welcomer.js - Slick welcome bars for your pages
 
+**Size:** < 1kb gzipped
+
 ---
 
 ## Usage
