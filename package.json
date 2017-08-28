@@ -1,0 +1,12 @@
+{
+  "name": "welcomer",
+  "version": "1.0.0",
+  "description": "Add slick welcome bars to your pages",
+  "main": "welcomer.js",
+  "repository": "https://github.com/slooob/welcomer.js",
+  "author": "Slooob",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
