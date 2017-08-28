@@ -1,6 +1,4 @@
-# welcomer.js
-
-Add slick welcome bars to your pages
+# Welcomer.js - Slick welcome bars for your pages
 
 ---
 
