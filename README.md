@@ -7,11 +7,13 @@
 ## Usage
 
 ```javascript
-$('body').welcomer();
+$(function() {
+    $('body').welcomer();
+});
 ```
 
 ```html
-<body data-welcomer-content="We launched our new product!" data-welcomer-link="Start a trial" data-welcomer-href="https://example.com">
+<body data-welcomer-content="Say hello to welcomer.js" data-welcomer-link="View on GitHub" data-welcomer-href="https://github.com/slooob/welcomer.js">
 </body>
 ```
 
