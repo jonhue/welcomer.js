@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "Slick welcome bars for your pages",
   "main": "welcomer.js",
-  "homepage": "https://slooob.github.io/slooob/welcomer.js",
+  "homepage": "https://slooob.github.io/welcomer.js",
   "bugs": {
     "url": "https://github.com/slooob/welcomer.js/issues",
     "email": "developer@slooob.com"
