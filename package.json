@@ -4,7 +4,7 @@
   "description": "Slick welcome bars for your pages",
   "main": "welcomer.js",
   "repository": "https://github.com/slooob/welcomer.js",
-  "author": "Slooob",
+  "author": "slooob <developer@slooob.com>",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.2.1"
