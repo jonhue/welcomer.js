@@ -4,6 +4,10 @@
 
 * nothing yet
 
+### 1.2.3 - 2017-08-29
+
+* minor improvements
+
 ### 1.2.2 - 2017-08-29
 
 * enhancements

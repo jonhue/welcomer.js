@@ -1,6 +1,6 @@
 {
   "name": "welcomer",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Slick welcome bars for your pages",
   "main": "welcomer.js",
   "homepage": "https://slooob.github.io/welcomer.js",
