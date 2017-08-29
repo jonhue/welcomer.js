@@ -2,12 +2,11 @@
 
 <img src="https://travis-ci.org/slooob/welcomer.js.svg?branch=master" />
 
-**Size:** < 1kb gzipped
-
 ---
 
 ## Table of Contents
 
+* [Information](#information)
 * [Usage](#usage)
     * [Options](#options)
     * [Styles](#styles)
@@ -19,13 +18,21 @@
 
 ---
 
+## Information
+
+**Size:** Welcomer.js takes < 1kb gzipped.
+
+**Dependencies:** [jQuery](https://github.com/jquery/jquery)
+
+---
+
 ## Usage
 
 Welcomer.js is simple to use and does not require a lot of markup:
 
 ```javascript
 $(function() {
-    $('body').welcomer();
+    $('body').welcomer({ 'close': true });
 });
 ```
 
@@ -34,23 +41,38 @@ $(function() {
 </body>
 ```
 
+### Functions
+
+```javascript
+// Shows welcomer
+welcomerAppear($('.welcomer'));
+
+// Hides welcomer
+welcomerDisppear($('.welcomer'));
+
+// Hides welcomer in 5 seconds unless it is hovered
+welcomerAutoclose($('.welcomer'), 5000);
+```
+
 ### Options
 
 Welcomer.js adopts well to your site. You have bunch of configuration options:
 
-* `data-welcomer-content`: The primary text. Accepts string.
-* `data-welcomer-mobile-content`: An alternative text used for screen sizes < `750px`. Accepts string.
-* `data-welcomer-link`: Call-to-action caption. Requires `data-welcomer-href`. Accepts string.
-* `data-welcomer-mobile-link`: Call-to-action caption used for screen sizes < `750px`. Requires `data-welcomer-href`. Accepts string.
-* `data-welcomer-href`: Call-to-action target location. Requires `data-welcomer-link`. Accepts string.
-* `data-welcomer-new_tab`: If `true`, opens call-to-action target location in a new tab. Accepts `true` or `false`. Defaults to `false`.
-* `data-welcomer-close`: Whether a close button is included. Accepts `true` or `false`. Defaults to `true`.
-* `data-welcomer-autoclose`: Miliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
-* `data-welcomer-delay`: Miliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
+* HTML:
+    * `data-welcomer-content`: The primary text. Accepts string.
+    * `data-welcomer-mobile-content`: An alternative text used for screen sizes < `750px`. Accepts string.
+    * `data-welcomer-link`: Call-to-action caption. Requires `data-welcomer-href`. Accepts string.
+    * `data-welcomer-mobile-link`: Call-to-action caption used for screen sizes < `750px`. Requires `data-welcomer-href`. Accepts string.
+    * `data-welcomer-href`: Call-to-action target location. Requires `data-welcomer-link`. Accepts string.
+* JavaScript:
+    * `newTab`: If `true`, opens call-to-action target location in a new tab. Accepts `true` or `false`. Defaults to `false`.
+    * `close`: Whether a close button is included. Accepts `true` or `false`. Defaults to `true`.
+    * `autoclose`: Miliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
+    * `delay`: Miliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
 
 ### Styles
 
-You can find the project's [`sass` file](https://github.com/slooob/welcomer.js/blob/master/welcomer.sass) under the root directory. If you want to modify it to integrate Welcomer.js better into your site, feel free to download and edit it. Now embed the edited version on your site.
+You can find the project's [`sass` file](https://github.com/slooob/welcomer.js/blob/master/welcomer.sass) under the root directory. If you want to modify it to integrate Welcomer.js better into your site, feel free to download and edit it. Then embed the edited version on your site.
 
 ---
 
