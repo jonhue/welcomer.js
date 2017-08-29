@@ -10,6 +10,7 @@
 
 * [Usage](#usage)
     * [Options](#options)
+    * [Styles](#styles)
 * [To Do](#to-do)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
