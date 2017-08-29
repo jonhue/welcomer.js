@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.2.2 - 2017-08-29
+
+* enhancements
+    * make Welcomer.js mobile aware
+
 ### 1.2.1 - 2017-08-29
 
 * minor improvements

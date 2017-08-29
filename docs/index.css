@@ -6,11 +6,6 @@ head, body {
 }
 
 
-.hidden {
-    display: none;
-}
-
-
 a {
     transition: all .15s ease-out;
     color: #fff;
@@ -28,13 +23,13 @@ a.btn {
     top: 0;
     background: #fff;
     border-radius: 3px;
-    box-shadow: 0 4px 15px 0 rgba(black, 0.05);
-    padding: 10px 25px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.05);
+    padding: 15px 25px;
     font-size: 14px;
     color: #80D0C7;
 }
 a.btn:hover, a.btn:active, a.btn:focus {
-    box-shadow: 0 7px 40px 0 rgba(black, 0.05);
+    box-shadow: 0 7px 40px 0 rgba(0, 0, 0, 0.05);
 }
 a.btn:hover {
     top: -1px;
@@ -43,13 +38,16 @@ a.btn:active {
     top: 2px;
 }
 
-p {
+.content-wrapper p:not(.wrapper) {
     opacity: .75;
+    line-height: 1.75em;
+    padding: 0 2em;
 }
 
 h1 {
     font-size: 5em;
-    margin: .1em 0
+    padding: .1em 0;
+    margin: 0;
 }
 
 
@@ -72,6 +70,7 @@ h1 {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    margin: 0;
 }
 .wrapper > a:not(:first-child) {
     margin-left: 30px;
@@ -85,4 +84,36 @@ a.slooob {
 a.slooob > svg {
     height: 35px;
     width: auto;
+}
+
+
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 4em;
+    }
+    a.fork {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        display: block;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+        padding: 3em 0 .1em;
+    }
+    .wrapper {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        margin-top: 3em;
+    }
+    a.btn {
+        color: #25a9f6;
+    }
 }

@@ -17,6 +17,7 @@
         font-size: 13px
         letter-spacing: .075em
         color: #fff
+        opacity: .75
     a
         height: 27px
         display: flex
@@ -46,3 +47,20 @@
         opacity: .25
         &:hover
             opacity: .75
+
+
+@media (max-width: 750px)
+    .welcomer
+        a
+            height: auto
+            display: block
+            padding: 0
+            color: #4372f5
+            border-radius: 0
+            background: none !important
+            font-size: 11px
+        p
+            font-size: 11px
+            letter-spacing: .1em
+        .welcomer-closer
+            display: none
