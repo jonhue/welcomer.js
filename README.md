@@ -67,8 +67,8 @@ Welcomer.js adopts well to your site. You have bunch of configuration options:
 * JavaScript:
     * `newTab`: If `true`, opens call-to-action target location in a new tab. Accepts `true` or `false`. Defaults to `false`.
     * `close`: Whether a close button is included. Accepts `true` or `false`. Defaults to `true`.
-    * `autoclose`: Miliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
-    * `delay`: Miliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
+    * `autoclose`: Milliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
+    * `delay`: Milliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
 
 ### Styles
 
