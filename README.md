@@ -1,5 +1,6 @@
 # Welcomer.js - Slick welcome bars for your pages
 
+[![NPM Version](https://img.shields.io/npm/v/welcomer.svg)][pkg-npm]
 <img src="https://travis-ci.org/slooob/welcomer.js.svg?branch=master" />
 
 ---
