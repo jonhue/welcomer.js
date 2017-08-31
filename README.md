@@ -3,6 +3,8 @@
 ![NPM Version](https://img.shields.io/npm/v/welcomer.svg)
 <img src="https://travis-ci.org/slooob/welcomer.js.svg?branch=master" />
 
+With Welcomer.js you get a simple solution to embed a customizable & slick bar to your webpage, to welcome people to your site or introduce new features to your customers. All of that without polluting your DOM.
+
 ---
 
 ## Table of Contents
@@ -10,6 +12,7 @@
 * [Information](#information)
 * [Usage](#usage)
     * [Options](#options)
+    * [Functions](#functions)
     * [Styles](#styles)
 * [To Do](#to-do)
 * [Contributing](#contributing)
