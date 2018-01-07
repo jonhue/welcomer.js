@@ -3,13 +3,13 @@
   "version": "1.2.3",
   "description": "Slick welcome bars for your pages",
   "main": "welcomer.js",
-  "homepage": "https://slooob.github.io/welcomer.js",
+  "homepage": "https://jonhue.github.io/welcomer.js",
   "bugs": {
-    "url": "https://github.com/slooob/welcomer.js/issues",
-    "email": "developer@slooob.com"
+    "url": "https://github.com/jonhue/welcomer.js/issues",
+    "email": "me@jonhue.me"
   },
-  "repository": "https://github.com/slooob/welcomer.js",
-  "author": "slooob <developer@slooob.com>",
+  "repository": "https://github.com/jonhue/welcomer.js",
+  "author": "Jonas Hübotter <me@jonhue.me>",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.2.1"
