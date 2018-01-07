@@ -106,7 +106,7 @@ Welcomer.js follows Semantic Versioning 2.0 as defined at http://semver.org.
 
 MIT License
 
-Copyright (c) 2017 Slooob
+Copyright (c) 2017 Jonas Hübotter
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
