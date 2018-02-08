@@ -51,10 +51,12 @@ class Welcomer {
     }
 
     init() {
-        setTimeout( () => this.appear(), this.options.delay );
         document.querySelectorAll('.welcomer--close, .welcomer > a').addEventListener( 'click', () => this.disappear() );
-        if (this.options.autoclose)
-            this.autoclose(this.options.autoclose);
+        setTimeout( () => {
+            this.appear();
+            if (this.options.autoclose)
+                this.autoclose(this.options.autoclose);
+        }, this.options.delay );
     }
 
     appear() {
