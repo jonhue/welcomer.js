@@ -1,6 +1,6 @@
 {
   "name": "welcomer",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "Slick welcome bars for your pages",
   "main": "welcomer.js",
   "homepage": "https://jonhue.github.io/welcomer.js",
@@ -10,8 +10,5 @@
   },
   "repository": "https://github.com/jonhue/welcomer.js",
   "author": "Jonas Hübotter <me@jonhue.me>",
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.2.1"
-  }
+  "license": "MIT"
 }
