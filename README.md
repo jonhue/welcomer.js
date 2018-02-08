@@ -68,7 +68,7 @@ welcomer.autoclose(5000);
 
 ### Options
 
-Welcomer.js adopts well to your site. You have bunch of configuration options:
+You can pass an options hash when constructing new objects from the `Welcomer` class:
 
 * `autoclose` Milliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
 * `delay` Milliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
