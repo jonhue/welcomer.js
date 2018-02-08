@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.0 - 2018/02/08
+
+* features
+    * allow for an easy mobile implementation (again)
+
 ### 2.0.0 - 2018/02/08
 
 * features

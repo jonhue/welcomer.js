@@ -24,6 +24,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+$welcomer--mobile: 750px !default
+
+
 .welcomer
     position: relative
     display: flex
@@ -31,8 +34,8 @@
     align-items: center
     width: 100%
     background: #252b33
-    height: 50px
-    margin-top: -50px
+    height: $welcomer--height
+    margin-top: -$welcomer--height
     transition: all .25s ease-out
     &.welcomer--shown
         margin: 0
@@ -73,9 +76,11 @@
         opacity: .25
         &:hover
             opacity: .75
+    .welcomer--mobile
+        display: none
 
 
-@media (max-width: 750px)
+@media (max-width: $welcomer--mobile)
     .welcomer
         a
             height: auto
@@ -90,3 +95,7 @@
             letter-spacing: .1em
         .welcomer--close
             display: none
+        .welcomer--mobile
+            display: block
+            & + p:not(.welcomer--mobile), & + a:not(.welcomer--mobile)
+                display: none

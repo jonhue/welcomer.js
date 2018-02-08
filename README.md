@@ -43,7 +43,9 @@ let welcomer = new Welcomer;
 
 ```html
 <div class="welcomer">
+    <p class="welcomer--mobile">Window < 750px</p>
     <p>Say hello to Welcomer.js</p>
+    <a href="https://github.com/jonhue/welcomer.js" target="_blank" class="welcomer--mobile">Learn more</a>
     <a href="https://github.com/jonhue/welcomer.js" target="_blank">View on GitHub</a>
     <div class="welcomer--close">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g transform="translate(0, 0)"><polygon fill="#fff" points="10.1,4.5 8,6.6 5.9,4.5 4.5,5.9 6.6,8 4.5,10.1 5.9,11.5 8,9.4 10.1,11.5 11.5,10.1 9.4,8 11.5,5.9 "></polygon></g></svg>
@@ -51,7 +53,7 @@ let welcomer = new Welcomer;
 </div>
 ```
 
-**Note:** You can omit the `.welcomer--close` div, if you don't want your welcomer to be closeable manually.
+**Note:** You can omit the `.welcomer--close` div, if you don't want your welcomer to be closeable manually. Elements with the `welcomer--mobile` class are also optional.
 
 ### Functions
 
@@ -76,6 +78,8 @@ You can pass an options hash when constructing new objects from the `Welcomer` c
 ### Styles
 
 You can find the project's [`sass` file](src/welcomer.sass) under the root directory. If you want to modify it to integrate Welcomer.js better into your site, feel free to download and edit it. Then embed the edited version on your site.
+
+You can change the mobile breakpoint by setting the `$welcomer--mobile` variable before importing Welcomer.js.
 
 ---
 
