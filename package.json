@@ -2,7 +2,7 @@
   "name": "welcomer",
   "version": "2.0.0",
   "description": "Slick welcome bars for your pages",
-  "main": "welcomer.js",
+  "main": "src/welcomer.js",
   "homepage": "https://jonhue.github.io/welcomer.js",
   "bugs": {
     "url": "https://github.com/jonhue/welcomer.js/issues",

@@ -1,10 +1,10 @@
 /**!
  * @fileOverview Welcomer.js - Slick welcome bars for your pages
- * @version 1.2.3
+ * @version 2.0.0
  * @license
  * MIT License
  *
- * Copyright (c) 2017 Slooob
+ * Copyright (c) 2017 Jonas Hübotter
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,67 +24,61 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-$.fn.extend({
-    welcomer: function(options) {
-        var content = $(this).data('welcomer-content') || 'Say hello to Welcomer.js',
-            mobileContent = $(this).data('welcomer-mobile-content'),
-            link = $(this).data('welcomer-link'),
-            mobileLink = $(this).data('welcomer-mobile-link'),
-            href = $(this).data('welcomer-href');
-        var defaults = {
-            newTab: false,
-            close: true,
-            autoclose: false,
-            delay: 1000
+class Welcomer {
+
+    constructor(opts = {}) {
+
+        this._element = document.querySelector('.welcomer');
+        this._options = {
+            autoclose: opts.autoclose || false,
+            delay: opts.delay || 1000
         };
 
-        options = $.extend(defaults, options);
-
-        var closer = '<div class="welcomer-closer"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g transform="translate(0, 0)"><polygon fill="#fff" points="10.1,4.5 8,6.6 5.9,4.5 4.5,5.9 6.6,8 4.5,10.1 5.9,11.5 8,9.4 10.1,11.5 11.5,10.1 9.4,8 11.5,5.9 "></polygon></g></svg></div>';
-
-        if ( mobileContent && $(document).width() <= 750 ) {
-            var content = mobileContent;
-        };
-        if ( mobileLink && $(document).width() <= 750 ) {
-            var link = mobileLink;
-        };
-
-        $(this).prepend('<div class="welcomer welcomer-hidden"><p>' + content + '</p>' + ((link && href) ? '<a href="' + href + '"' + (options.newTab ? ' target="_blank"' : '') + '>' + link + '</a>' : '') + (options.close ? closer : '') + '</div>');
-
-        welcomerInit($(this).find('.welcomer:first-child'), options.autoclose, options.delay);
     }
-});
 
+    get element() {
+        return this._element;
+    }
+    set element(val) {
+        this._element = val;
+    }
 
-function welcomerInit(welcomer, autoclose, delay) {
-    setTimeout(function() {
-        welcomerAppear(welcomer);
-    }, delay);
+    get options() {
+        return this._options;
+    }
+    set options(val) {
+        this._options = val;
+    }
 
-    welcomer.find('.welcomer-closer, a').click(function() {
-        welcomerDisappear(welcomer, autoclose);
-    })
-    if (autoclose) {
-        welcomerAutoclose(welcomer, autoclose);
-    };
+    init() {
+        setTimeout( () => this.appear(), this.options.delay );
+        document.querySelectorAll('.welcomer--close, .welcomer > a').addEventListener( 'click', () => this.disappear() );
+        if (this.options.autoclose)
+            this.autoclose(this.options.autoclose);
+    }
+
+    appear() {
+        this.element.classList.add('welcomer--shown');
+    }
+    disappear() {
+        this.element.classList.remove('welcomer--shown');
+    }
+    toggle() {
+        if (this.element.lcassList.contains('welcomer--shown'))
+            this.disappear()
+        else
+            this.appear();
+    }
+
+    autoclose(delay) {
+        setTimeout( () => {
+            if ( this.element.parentElement.querySelector('.welcomer:hover').length > 0 )
+                this.autoclose(delay)
+            else
+                this.disappear();
+        }, delay );
+    }
+
 };
 
-
-function welcomerAutoclose(welcomer, autoclose) {
-    setTimeout(function() {
-        welcomerDisappear(welcomer, autoclose);
-    }, autoclose);
-};
-
-
-function welcomerAppear(welcomer) {
-    welcomer.removeClass('welcomer-hidden');
-};
-
-function welcomerDisappear(welcomer, autoclose) {
-    if ( welcomer.parent().find('.welcomer:hover').length != 0 && autoclose != false ) {
-        welcomerAutoclose(welcomer, autoclose);
-    } else {
-        welcomer.addClass('welcomer-hidden');
-    };
-};
+export default Welcomer;

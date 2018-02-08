@@ -35,54 +35,57 @@ With Welcomer.js you get a simple solution to embed a customizable & slick bar o
 Welcomer.js is simple to use and does not require a lot of markup:
 
 ```javascript
-$(function() {
-    $('body').welcomer({ 'close': true });
-});
+import Welcomer from 'welcomer';
+let welcomer = new Welcomer;
+```
+
+```sass
+@import "welcomer/src/welcomer"
 ```
 
 ```html
-<body data-welcomer-content="Say hello to Welcomer.js" data-welcomer-link="View on GitHub" data-welcomer-href="https://github.com/slooob/welcomer.js">
-</body>
+<div class="welcomer">
+    <p>Say hello to Welcomer.js</p>
+    <a href="https://github.com/jonhue/welcomer.js" target="_blank">View on GitHub</a>
+    <div class="welcomer--close">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g transform="translate(0, 0)"><polygon fill="#fff" points="10.1,4.5 8,6.6 5.9,4.5 4.5,5.9 6.6,8 4.5,10.1 5.9,11.5 8,9.4 10.1,11.5 11.5,10.1 9.4,8 11.5,5.9 "></polygon></g></svg>
+    </div>
+</div>
 ```
+
+**Note:** You can omit the `.welcomer--close` div, if you don't want your welcomer to be closeable manually.
 
 ### Functions
 
 ```javascript
 // Shows welcomer
-welcomerAppear($('.welcomer'));
+welcomer.appear();
 
 // Hides welcomer
-welcomerDisppear($('.welcomer'));
+welcomer.disappear();
 
 // Hides welcomer in 5 seconds unless it is hovered
-welcomerAutoclose($('.welcomer'), 5000);
+welcomer.autoclose(5000);
 ```
 
 ### Options
 
 Welcomer.js adopts well to your site. You have bunch of configuration options:
 
-* HTML:
-    * `data-welcomer-content`: The primary text. Accepts string.
-    * `data-welcomer-mobile-content`: An alternative text used for screen sizes < `750px`. Accepts string.
-    * `data-welcomer-link`: Call-to-action caption. Requires `data-welcomer-href`. Accepts string.
-    * `data-welcomer-mobile-link`: Call-to-action caption used for screen sizes < `750px`. Requires `data-welcomer-href`. Accepts string.
-    * `data-welcomer-href`: Call-to-action target location. Requires `data-welcomer-link`. Accepts string.
-* JavaScript:
-    * `newTab`: If `true`, opens call-to-action target location in a new tab. Accepts `true` or `false`. Defaults to `false`.
-    * `close`: Whether a close button is included. Accepts `true` or `false`. Defaults to `true`.
-    * `autoclose`: Milliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
-    * `delay`: Milliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
+* `autoclose` Milliseconds after which the welcomer automatically disappears. Accepts an integer or `false`. Defaults to `false`.
+* `delay` Milliseconds after which welcomer opens. Accepts an integer. Defaults to `1000`.
 
 ### Styles
 
-You can find the project's [`sass` file](https://github.com/slooob/welcomer.js/blob/master/welcomer.sass) under the root directory. If you want to modify it to integrate Welcomer.js better into your site, feel free to download and edit it. Then embed the edited version on your site.
+You can find the project's [`sass` file](src/welcomer.sass) under the root directory. If you want to modify it to integrate Welcomer.js better into your site, feel free to download and edit it. Then embed the edited version on your site.
 
 ---
 
 ## To Do
 
-* Leave your suggestions [here](https://github.com/slooob/welcomer.js/issues/new)
+[Here](https://github.com/jonhue/welcomer.js/projects/1) is the full list of current projects.
+
+To propose your ideas, initiate the discussion by adding a [new issue](https://github.com/jonhue/welcomer.js/issues/new).
 
 ---
 
@@ -90,13 +93,13 @@ You can find the project's [`sass` file](https://github.com/slooob/welcomer.js/b
 
 We hope that you will consider contributing to Welcomer.js. Please read this short overview for some information about how to get started:
 
-[Learn more about contributing to this repository](https://github.com/slooob/welcomer.js/blob/master/CONTRIBUTING.md), [Code of Conduct](https://github.com/slooob/welcomer.js/blob/master/CODE_OF_CONDUCT.md)
+[Learn more about contributing to this repository](CONTRIBUTING.md), [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ### Contributors
 
 Give the people some :heart: who are working on this project. See them all at:
 
-https://github.com/slooob/welcomer.js/graphs/contributors
+https://github.com/jonhue/welcomer.js/graphs/contributors
 
 ### Semantic Versioning
 
