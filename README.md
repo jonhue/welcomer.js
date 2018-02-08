@@ -1,7 +1,7 @@
 # Welcomer.js - Slick welcome bars for your pages
 
 ![NPM Version](https://img.shields.io/npm/v/welcomer.svg)
-<img src="https://travis-ci.org/slooob/welcomer.js.svg?branch=master" />
+<img src="https://travis-ci.org/jonhue/welcomer.js.svg?branch=master" />
 
 With Welcomer.js you get a simple solution to embed a customizable & slick bar on your webpage, to welcome people to your site or introduce new features to your customers. All of that without polluting your DOM.
 
@@ -25,8 +25,6 @@ With Welcomer.js you get a simple solution to embed a customizable & slick bar o
 ## Information
 
 **Size:** Welcomer.js takes < 1kb gzipped.
-
-**Dependencies:** [jQuery](https://github.com/jquery/jquery)
 
 ---
 
