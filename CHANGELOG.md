@@ -4,7 +4,7 @@
 
 * nothing yet
 
-### 1.2.3 - 2017/08/29
+### 2.0.0 - 2018/02/08
 
 * features
     * add ES6 support
