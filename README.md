@@ -5,6 +5,8 @@
 
 With Welcomer.js you get a simple solution to embed a customizable & slick bar on your webpage, to welcome people to your site or introduce new features to your customers. All of that without polluting your DOM.
 
+[Demo](https://jonhue.github.io/welcomer.js)
+
 ---
 
 ## Table of Contents
