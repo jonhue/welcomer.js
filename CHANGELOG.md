@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.0 - 2018/02/23
+
+* bugfixes
+    * fixed `Undefined variable: "$welcomer--height"`
+
 ### 2.1.0 - 2018/02/08
 
 * features

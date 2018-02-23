@@ -1,6 +1,6 @@
 /**!
  * @fileOverview Welcomer.js - Slick welcome bars for your pages
- * @version 2.0.0
+ * @version 2.1.1
  * @license
  * MIT License
  *
