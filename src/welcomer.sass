@@ -1,6 +1,6 @@
 /**!
  * @fileOverview Welcomer.js - Slick welcome bars for your pages
- * @version 2.1.1
+ * @version 2.1.2
  * @license
  * MIT License
  *
@@ -30,6 +30,7 @@ $welcomer--height: 50px !default
 
 .welcomer
     position: relative
+    z-index: 99
     display: flex
     justify-content: center
     align-items: center
@@ -39,7 +40,7 @@ $welcomer--height: 50px !default
     margin-top: -$welcomer--height
     transition: all .25s ease-out
     &.welcomer--shown
-        margin: 0
+        margin-top: 0
     p
         font-family: inherit
         font-style: normal
