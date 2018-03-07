@@ -36,7 +36,6 @@ Welcomer.js is simple to use and does not require a lot of markup:
 
 ```javascript
 import Welcomer from 'welcomer';
-Welcomer.init();
 let welcomer = new Welcomer;
 ```
 
