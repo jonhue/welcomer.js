@@ -1,6 +1,6 @@
 /**!
  * @fileOverview Welcomer.js - Slick welcome bars for your pages
- * @version 2.1.1
+ * @version 2.1.2
  * @license
  * MIT License
  *
@@ -26,13 +26,14 @@
  */
 class Welcomer {
 
-    constructor(opts = {}) {
+    constructor(options = {}) {
 
         this._element = document.querySelector('.welcomer');
         this._options = {
-            autoclose: opts.autoclose || false,
-            delay: opts.delay || 1000
+            autoclose: options.autoclose || false,
+            delay: options.delay || 1000
         };
+        this.init();
 
     }
 
@@ -51,7 +52,7 @@ class Welcomer {
     }
 
     init() {
-        document.querySelectorAll('.welcomer--close, .welcomer > a').addEventListener( 'click', () => this.disappear() );
+        document.querySelectorAll('.welcomer--close, .welcomer > a').forEach( (element) => element.addEventListener( 'click', () => this.disappear() ) );
         setTimeout( () => {
             this.appear();
             if (this.options.autoclose)
