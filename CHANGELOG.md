@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.3 - 2018/03/07
+
+* enhancements
+    * improved `z-index` of Welcomer
+
 ### 2.1.2 - 2018/03/07
 
 * bugfixes
