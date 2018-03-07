@@ -4,7 +4,12 @@
 
 * nothing yet
 
-### 2.1.0 - 2018/02/23
+### 2.1.2 - 2018/03/07
+
+* bugfixes
+    * fixed issue where Welcomer did not initialize automatically.
+
+### 2.1.1 - 2018/02/23
 
 * bugfixes
     * fixed `Undefined variable: "$welcomer--height"`
